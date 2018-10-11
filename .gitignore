@@ -1,0 +1,27 @@
+# Directories #
+###############
+node_modules/
+bower_components/
+[Bb]uild/
+[Gg]ames/
+.vscode/
+docs/
+coverage/
+test-reports/
+tests/
+**/generated/
+**/dependencies/
+# Files #
+#########
+/package-lock.json
+[Mm]odules/**/dependencies/*.d.ts
+[Mm]odules/**/dependencies/*.d.ts.map
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.[Tt]rashes
+ehthumbs.db
+[Tt]humbs.db

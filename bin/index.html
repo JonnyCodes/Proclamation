@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Proclamation!</title>
+    </head>
+    <body onload="init()">
+
+        Look in the console.
+
+        <pre style="background-color: #eee; border: 1px solid #999; padding: 20px;">
+            <code>
+let herald = new Proclamation.Herald();
+
+herald.hark(listener, this);
+herald.hark(onceTest, this, true);
+herald.proclaim();
+herald.proclaim();
+
+function listener() {
+    console.log("*GASP* Doth mine ears deceive me?")
+}
+
+function onceTest() {
+    console.log("Be gone, For I have had enough of your foolishness!");
+}
+            </code>
+        </pre>
+
+        <script src="./proclamation.js"></script>
+        <script>
+            function init() {
+                let herald = new Proclamation.Herald();
+
+                herald.hark(listener, this);
+                herald.hark(onceTest, this, true);
+                herald.proclaim();
+                herald.proclaim();
+            }
+
+            function listener() {
+                console.log("*GASP* Doth mine ears deceive me?")
+            }
+
+            function onceTest() {
+                console.log("Be gone, For I have had enough of your foolishness!");
+            }
+        </script>
+    </body>
+</html>
