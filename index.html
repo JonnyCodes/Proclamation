@@ -29,7 +29,7 @@ function onceTest() {
             </code>
         </pre>
 
-        <script src="./proclamation.js"></script>
+        <script src="./bin/proclamation.js"></script>
         <script>
             function init() {
                 let herald = new Proclamation.Herald();
@@ -39,7 +39,7 @@ function onceTest() {
 
                 herald.proclaim();
                 herald.proclaim();
-                
+
                 herald.unhand(listener, this);
                 herald.proclaim();
             }
