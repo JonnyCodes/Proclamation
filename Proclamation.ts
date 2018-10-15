@@ -50,7 +50,7 @@ namespace Proclamation {
             this._once = once;
         }
 
-        public heed(params: any[]): void {
+        public heed(...params: any[]): void {
             this._heederFunc.apply(this._context, ...params);
     
             if(this._once) {

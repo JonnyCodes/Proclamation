@@ -8,14 +8,17 @@ let herald = new Proclamation.Herald();
 herald.hark(listener, this);
 herald.hark(onceTest, this, true);
 
-herald.proclaim();
-herald.proclaim();
+herald.proclaim("*GASP* Doth mine ears deceive me?");
+herald.proclaim("*GASP* Doth mine ears deceive me?", "A second parameter?! What is this wizardry!!");
 
 herald.unhand(listener, this);
 herald.proclaim();
 
-function listener() {
-    console.log("*GASP* Doth mine ears deceive me?")
+function listener(param1, param2) {
+    console.log(param1);
+    if (param2) {
+        console.log(param2);
+    }
 }
 
 function onceTest() {

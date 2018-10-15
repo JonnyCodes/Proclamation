@@ -43,7 +43,11 @@ var Proclamation;
             this._context = context;
             this._once = once;
         }
-        Heeder.prototype.heed = function (params) {
+        Heeder.prototype.heed = function () {
+            var params = [];
+            for (var _i = 0; _i < arguments.length; _i++) {
+                params[_i] = arguments[_i];
+            }
             var _a;
             (_a = this._heederFunc).apply.apply(_a, [this._context].concat(params));
             if (this._once) {
