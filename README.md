@@ -26,7 +26,7 @@ function onceTest() {
 }
 ```
 
-See tihs example running [here.](https://jonnycodes.github.io/Proclamation/)
+See this example running [here.](https://jonnycodes.github.io/Proclamation/)
 
 To get this running use the following commnds:
 
